@@ -1,0 +1,11 @@
+
+
+Importing file: C:\Users\renan\Google Drive\Udemy\ibm-integration-bus\Fontes\Aula01_SOAP\artefatos\servicosoap.wsdl
+
+The WSDL import will proceed with bindings servicosoapSOAP.
+Creating wsdl schema document for file:///C:/Users/renan/Google Drive/Udemy/ibm-integration-bus/Fontes/Aula01_SOAP/artefatos/servicosoap.wsdl.
+Parsing wsdl binding {http://www.middleware4you.com/servicosoap/}servicosoapSOAP.
+Parsing wsdl binding input NewOperation.
+Parsing wsdl binding output NewOperation.
+Processing doc style for operation NewOperation.
+Populating WSDL schema servicosoap.xsd.
