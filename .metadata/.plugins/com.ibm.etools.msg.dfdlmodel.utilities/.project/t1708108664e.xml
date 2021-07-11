@@ -86,4 +86,7 @@
     <simpleType href="platform:/resource/aula_soap/Pessoa_v1.xsd#//Banco;XSDSimpleTypeDefinition=5" name="Banco" variety="atomic"/>
     <simpleType href="platform:/resource/aula_soap/Pessoa_v1.xsd#//RegimeTributario;XSDSimpleTypeDefinition=6" name="RegimeTributario" variety="atomic"/>
   </XSDCollection>
+  <XSDCollection href="platform:/resource/aula_soap/servicosoap.wsdl" prefix="tns" targetNamespace="http://www.middleware4you.com/servicosoap/">
+    <include name="/aula_soap/servicosoap_InlineSchema1.xsd" targetNamespace="http://www.middleware4you.com/servicosoap/"/>
+  </XSDCollection>
 </MessageBroker>

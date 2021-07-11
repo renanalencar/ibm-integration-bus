@@ -3,6 +3,7 @@
 	<name>aula_soap</name>
 	<comment></comment>
 	<projects>
+		<project>Project_DB</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>

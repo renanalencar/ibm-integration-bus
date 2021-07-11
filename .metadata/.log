@@ -130,3 +130,12 @@ Binding(F3,
 		,,true),null),
 	org.eclipse.ui.defaultAcceleratorConfiguration,
 	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+
+!ENTRY org.eclipse.ui 4 4 2021-07-11 15:17:01.203
+!MESSAGE Conflicting handlers for com.ibm.msl.mapping.ui.QuickLinkFromInputCommand: {com.ibm.msl.mapping.internal.ui.editor.MappingEditor$10@47d8676e} vs {com.ibm.msl.mapping.internal.ui.editor.MappingEditor$10@e926b7af}
+
+!ENTRY org.eclipse.ui 4 4 2021-07-11 15:17:01.209
+!MESSAGE Conflicting handlers for com.ibm.msl.mapping.ui.QuickLinkToOutputCommand: {com.ibm.msl.mapping.internal.ui.editor.MappingEditor$10@ceafae8e} vs {com.ibm.msl.mapping.internal.ui.editor.MappingEditor$10@f5020442}
+
+!ENTRY org.eclipse.osgi 2 1 2021-07-11 16:00:22.220
+!MESSAGE NLS unused message: NAME_EDITOR_LBL in: com.ibm.etools.mft.connector.ui.editor.plugin.MessageResourceBundle

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--xtools2_universal_type_manager-->
+<xmi:XMI xmlns:datamodelversion="http://www.ibm.com/com.ibm.datatools.core/model/data/1.8.0.0" xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:OracleModel="http:///com/ibm/db/models/oracle/oracle.ecore" xmlns:SQLConstraints="http:///org/eclipse/datatools/modelbase/sql/constraints.ecore" xmlns:SQLDataTypes="http:///org/eclipse/datatools/modelbase/sql/datatypes.ecore" xmlns:SQLExpressions="http:///org/eclipse/datatools/modelbase/sql/expressions.ecore" xmlns:SQLSchema="http:///org/eclipse/datatools/modelbase/sql/schema.ecore">
+  <OracleModel:OracleDatabase xmi:id="_jzjowOJzEeuIV4VmYWqrbg" name="xe" vendor="Oracle" version="11" schemas="_jzwdEOJzEeuIV4VmYWqrbg">
+    <eAnnotations xmi:id="_jzjoweJzEeuIV4VmYWqrbg" source="ConnectionURI">
+      <details xmi:id="_jzjowuJzEeuIV4VmYWqrbg" key="ConnectionKey" value="xe"/>
+    </eAnnotations>
+  </OracleModel:OracleDatabase>
+  <SQLSchema:Schema xmi:id="_jzwdEOJzEeuIV4VmYWqrbg" name="MIDDLEWARE4YOU" tables="_jzxEIOJzEeuIV4VmYWqrbg" database="_jzjowOJzEeuIV4VmYWqrbg"/>
+  <OracleModel:OracleTable xmi:id="_jzxEIOJzEeuIV4VmYWqrbg" name="PESSOA" schema="_jzwdEOJzEeuIV4VmYWqrbg" PCTFree="10" initTrans="1" maxTrans="255">
+    <columns xmi:id="_jzxEIeJzEeuIV4VmYWqrbg" name="NOME" nullable="false">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_jzxEIuJzEeuIV4VmYWqrbg" name="VARCHAR2" primitiveType="CHARACTER_VARYING" length="50"/>
+    </columns>
+    <columns xmi:id="_jzxEI-JzEeuIV4VmYWqrbg" name="SOBRENOME" nullable="false">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_jzxEJOJzEeuIV4VmYWqrbg" name="VARCHAR2" primitiveType="CHARACTER_VARYING" length="50"/>
+    </columns>
+    <columns xmi:id="_jzxEJeJzEeuIV4VmYWqrbg" name="ESTADOCIVIL" nullable="false">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_jzxEJuJzEeuIV4VmYWqrbg" name="CHAR"/>
+    </columns>
+    <columns xmi:id="_jzxEJ-JzEeuIV4VmYWqrbg" name="SEXO" nullable="false">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_jzxEKOJzEeuIV4VmYWqrbg" name="CHAR"/>
+    </columns>
+    <columns xmi:id="_jzxEKeJzEeuIV4VmYWqrbg" name="EMAIL" nullable="false">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_jzxEKuJzEeuIV4VmYWqrbg" name="VARCHAR2" primitiveType="CHARACTER_VARYING" length="50"/>
+    </columns>
+    <constraints xsi:type="SQLConstraints:CheckConstraint" xmi:id="_jzxEK-JzEeuIV4VmYWqrbg" name="SYS_C007299">
+      <searchCondition xsi:type="SQLExpressions:SearchConditionDefault" xmi:id="_jzxELOJzEeuIV4VmYWqrbg" SQL="&quot;NOME&quot; IS NOT NULL"/>
+    </constraints>
+    <constraints xsi:type="SQLConstraints:CheckConstraint" xmi:id="_jzxELeJzEeuIV4VmYWqrbg" name="SYS_C007300">
+      <searchCondition xsi:type="SQLExpressions:SearchConditionDefault" xmi:id="_jzxELuJzEeuIV4VmYWqrbg" SQL="&quot;SOBRENOME&quot; IS NOT NULL"/>
+    </constraints>
+    <constraints xsi:type="SQLConstraints:CheckConstraint" xmi:id="_jzxEL-JzEeuIV4VmYWqrbg" name="SYS_C007301">
+      <searchCondition xsi:type="SQLExpressions:SearchConditionDefault" xmi:id="_jzxEMOJzEeuIV4VmYWqrbg" SQL="&quot;ESTADOCIVIL&quot; IS NOT NULL"/>
+    </constraints>
+    <constraints xsi:type="SQLConstraints:CheckConstraint" xmi:id="_jzxEMeJzEeuIV4VmYWqrbg" name="SYS_C007302">
+      <searchCondition xsi:type="SQLExpressions:SearchConditionDefault" xmi:id="_jzxEMuJzEeuIV4VmYWqrbg" SQL="&quot;SEXO&quot; IS NOT NULL"/>
+    </constraints>
+    <constraints xsi:type="SQLConstraints:CheckConstraint" xmi:id="_jzxEM-JzEeuIV4VmYWqrbg" name="SYS_C007303">
+      <searchCondition xsi:type="SQLExpressions:SearchConditionDefault" xmi:id="_jzxENOJzEeuIV4VmYWqrbg" SQL="&quot;EMAIL&quot; IS NOT NULL"/>
+    </constraints>
+    <properties xmi:id="_jzxENeJzEeuIV4VmYWqrbg" bufferpool="DEFAULT"/>
+  </OracleModel:OracleTable>
+</xmi:XMI>
