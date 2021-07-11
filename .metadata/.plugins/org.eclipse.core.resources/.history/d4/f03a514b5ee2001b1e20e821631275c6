@@ -7,25 +7,25 @@
     <colorGraphic16 xmi:type="utility:GIFFileGraphic" resourceName="platform:/plugin/aula_soap/icons/full/obj16/servico_flow.gif"/>
     <colorGraphic32 xmi:type="utility:GIFFileGraphic" resourceName="platform:/plugin/aula_soap/icons/full/obj30/servico_flow.gif"/>
     <composition>
-      <nodes xmi:type="ComIbmSOAPInput.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_1" location="-10,50" wsdlFileName="servicosoap.wsdl" selectedPortType="servicosoap" selectedBinding="servicosoapSOAP" selectedPort="servicosoapSOAP" targetNamespace="http://www.middleware4you.com/servicosoap/" useHTTPTransport="true" urlSelector="/aula" allowQueryWSDL="true">
+      <nodes xmi:type="ComIbmSOAPInput.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_1" location="19,41" wsdlFileName="servicosoap.wsdl" selectedPortType="servicosoap" selectedBinding="servicosoapSOAP" selectedPort="servicosoapSOAP" targetNamespace="http://www.middleware4you.com/servicosoap/" useHTTPTransport="true" urlSelector="/aula" allowQueryWSDL="true">
         <translation xmi:type="utility:ConstantString" string="SOAP Input"/>
       </nodes>
-      <nodes xmi:type="EnviaPessoaFisica_sub.subflow:FCMComposite_1" xmi:id="FCMComposite_1_2" location="190,150">
+      <nodes xmi:type="EnviaPessoaFisica_sub.subflow:FCMComposite_1" xmi:id="FCMComposite_1_2" location="206,103">
         <translation xmi:type="utility:ConstantString" string="EnviaPessoaFisica_sub"/>
       </nodes>
-      <nodes xmi:type="ComIbmRouteToLabel.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_3" location="230,50" mode="routeToFirst">
+      <nodes xmi:type="ComIbmRouteToLabel.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_3" location="235,-5" mode="routeToFirst">
         <translation xmi:type="utility:ConstantString" string="Route To Label"/>
       </nodes>
-      <nodes xmi:type="ComIbmLabel.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_4" location="-5,150" labelName="EnviaPessoaFisicaOperation">
+      <nodes xmi:type="ComIbmLabel.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_4" location="-19,140" labelName="EnviaPessoaFisicaOperation">
         <translation xmi:type="utility:ConstantString" string="EnviaPessoaFisicaOperation"/>
       </nodes>
-      <nodes xmi:type="ComIbmLabel.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_5" location="-5,250" labelName="ConsultaPessoaOperation">
+      <nodes xmi:type="ComIbmLabel.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_5" location="-15,235" labelName="ConsultaPessoaOperation">
         <translation xmi:type="utility:ConstantString" string="ConsultaPessoaOperation"/>
       </nodes>
-      <nodes xmi:type="ConsultaPessoa_sub.subflow:FCMComposite_1" xmi:id="FCMComposite_1_6" location="150,250">
+      <nodes xmi:type="ConsultaPessoa_sub.subflow:FCMComposite_1" xmi:id="FCMComposite_1_6" location="140,281">
         <translation xmi:type="utility:ConstantString" string="ConsultaPessoa_sub"/>
       </nodes>
-      <nodes xmi:type="ComIbmSOAPReply.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_7" location="310,250">
+      <nodes xmi:type="ComIbmSOAPReply.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_7" location="266,189">
         <translation xmi:type="utility:ConstantString" string="SOAP Reply"/>
       </nodes>
       <connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_1" targetNode="FCMComposite_1_3" sourceNode="FCMComposite_1_1" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.in"/>

@@ -6,13 +6,13 @@
     <colorGraphic16 xmi:type="utility:GIFFileGraphic" resourceName="platform:/plugin/aula_soap/icons/full/obj16/ConsultaPessoa_sub.gif"/>
     <colorGraphic32 xmi:type="utility:GIFFileGraphic" resourceName="platform:/plugin/aula_soap/icons/full/obj30/ConsultaPessoa_sub.gif"/>
     <composition>
-      <nodes xmi:type="eflow:FCMSource" xmi:id="InTerminal.Input" location="30,30">
+      <nodes xmi:type="eflow:FCMSource" xmi:id="InTerminal.Input" location="20,20">
         <translation xmi:type="utility:TranslatableString" key="InTerminal.Input" bundleName="ConsultaPessoa_sub" pluginId="aula_soap"/>
       </nodes>
-      <nodes xmi:type="eflow:FCMSink" xmi:id="OutTerminal.Output" location="330,30">
+      <nodes xmi:type="eflow:FCMSink" xmi:id="OutTerminal.Output" location="320,20">
         <translation xmi:type="utility:TranslatableString" key="OutTerminal.Output" bundleName="ConsultaPessoa_sub" pluginId="aula_soap"/>
       </nodes>
-      <nodes xmi:type="ComIbmCompute.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_1" location="130,30" computeExpression="esql://routine/#ConsultaPessoa_sub_Compute.Main">
+      <nodes xmi:type="ComIbmCompute.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_1" location="122,19" computeExpression="esql://routine/#ConsultaPessoa_sub_Compute.Main">
         <translation xmi:type="utility:ConstantString" string="TransformaMsgRetorno"/>
       </nodes>
       <connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_1" targetNode="FCMComposite_1_1" sourceNode="InTerminal.Input" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.in"/>

@@ -101,3 +101,32 @@ Command-line arguments:  -data C:\Users\renan\Sites\ibm-integration-bus -os win3
 
 !ENTRY org.eclipse.osgi 2 1 2021-07-10 14:40:01.976
 !MESSAGE NLS missing message: IMPORT_SAVE_EDIT in: com.ibm.etools.msg.importer.wsdl.messages
+
+!ENTRY org.eclipse.jface 2 0 2021-07-11 12:41:46.198
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2021-07-11 12:41:46.198
+!MESSAGE A conflict occurred for F3:
+Binding(F3,
+	ParameterizedCommand(Command(com.ibm.etools.mft.fcb.action.DrillDown,Open Subflow,
+		Opens a subflow file,
+		Category(com.ibm.etools.mft.fcb.category.MessageFlowEditor,Message Flow Editor,Message Flow Editing Commands,true),
+		org.eclipse.ui.internal.MakeHandlersGo@e7a63ef5,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.ibm.etools.mft.fcb.context.MessageFlowEditor,,,system)
+Binding(F3,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.open.editor,Open Declaration,
+		Open an editor on the selected element,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@435ba215,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(F3,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.open.file.from.source,Open Selection,
+		Open an editor on the selected link,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@29719870,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
